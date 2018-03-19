@@ -1,0 +1,1 @@
+geth --datadir ./privatechain init genesis.json

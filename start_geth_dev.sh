@@ -1,0 +1,19 @@
+geth \
+--port 3001 \
+--networkid 8888 \
+--nodiscover \
+--datadir="privatechain" \
+--maxpeers=0  \
+--rpc \
+--rpcport 8545 \
+--rpcaddr 127.0.0.1 \
+--rpccorsdomain "*" \
+--rpcapi "eth,net,web3,personal" \
+-ws \
+--wsport 8546 \
+--wsaddr 0.0.0.0 \
+--wsorigins "*" \
+--wsapi "eth,net,web3,personal" \
+--minerthreads "1" \
+-mine \
+--etherbase "0xe8e84ee367bc63ddb38d3d01bccef106c194dc47" \
