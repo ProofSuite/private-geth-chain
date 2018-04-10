@@ -13,7 +13,7 @@ function createAccounts () {
 
 function unlockAccounts () {
   var accounts = personal.listAccounts
-  for (var i = 1; i < accounts.length; i++) {
+  for (var i = 0; i < accounts.length; i++) {
     personal.unlockAccount(accounts[i], "test", 9999)
   }
 }
@@ -21,7 +21,7 @@ function unlockAccounts () {
 function mineWhenTxPending() {
     if (eth.getBlock("pending").transactions.length > 0) {
         if (eth.mining) return;
-        miner.start(1);
+        miner.start(4);
     } else {
         miner.stop();
     }
@@ -31,5 +31,5 @@ function mineWhenTxPending() {
 createAccounts()
 unlockAccounts()
 
-eth.filter("latest", function(err, block) { mineWhenTxPending(); });
-eth.filter("pending", function(err, block) { mineWhenTxPending(); });
+// eth.filter("latest", function(err, block) { mineWhenTxPending(); });
+// eth.filter("pending", function(err, block) { mineWhenTxPending(); });

@@ -16,37 +16,71 @@ This local private chain comes with the following setup:
 
 ## Setup
 
-- Create private chain
+To use the front-end test application for the cryptofiat contract, first create a private blockchain.
 
 ```
 ./create_geth_dev.sh
 ```
 
-- Start private chain
+Start a node on the private blockchain
 
 ```
 ./start_geth_dev.sh
 ```
 
-- Setup all accounts
-
-First start a new geth console by attaching to the previously started geth process
+On a different terminal instance attach a geth process to the current to your running node
 
 ```
-geth attach /path/to/geth/datadir/geth.ipc
+geth attach /path/to/geth.ipc
 ```
 
-In the console type
+(Note: The IPC path is displayed on the logs when starting the node)
+
+In the console, you can now download javascript utility functions and use them to manage your private chain.
 
 ```
-loadScript("scripts/setup-accounts.js")
+loadScript('setup-accounts.js')
+loadScript('unlock-accounts.js')
+loadScript('allocate-ether.js')
 ```
 
-If you need to unlock accounts later, you can import the unlockAccounts() function:
+You can start mining or stop mining with the following commands:
 
 ```
-loadScript("scripts/unlock-accounts.js")
+miner.start(4)
+miner.stop()
+```
+
+After mining a sufficient amount of ether, you can allocate ether in order to be able to deploy the Oraclize contract
+(see below).
+
+```
+allocateEther()
+```
+
+Occasionally you will need to unlock accounts
+
+```
 unlockAccounts()
+```
+
+### Testing the CryptoDollar contracts
+
+After setting up your private chain correctly, instantiate the testnet oraclize service.
+From the ProofCryptoFiat folder:
+
+```
+cd ethereum-bridge
+npm install ethereum-bridge
+node bridge -H localhost:8545 -a 1 --dev --update-ds
+```
+
+Write down the Oraclize Address Resolver Address (OAR) and insert it in the CryptoFiatHub contract.
+Compile and migrate the CryptoFiat contracts on the development_geth network.
+
+```
+truffle compile --all
+truffle migrate --reset --network development_geth
 ```
 
 ### Contribution
