@@ -1,6 +1,15 @@
+# Private Cryptofiat Playground
+
+This version of the private Geth comes with the Cryptofiat contracts already deployed
+
+Network ID: 8888
+CryptoDollar: 0x080ad9df9d0dc7e3d7335563e35c1ffd7b9cf8b4
+CryptoFiatHub: 0xe697df331dc3dec15cca00196d68094e5f1dfb3e
+Rewards: 0x132cd9073785489134b1bd1ff9d80d00c7795d3d
+Store: 0xbf3a2acc78b6c339e9d4afc3466ec4abfd5f4bca
 
 # Geth Local Setup
-This repository provides a few utilities to setup a local private ethereum chain as well as a few javascript functions that can be used to interact with your local chain.
+This repository also provides a few utilities to setup a local private ethereum chain as well as a few javascript functions that can be used to interact with your local chain.
 
 ## Requirements :
 - OSX or Linux
@@ -15,12 +24,6 @@ This local private chain comes with the following setup:
 - Websocket API
 
 ## Setup
-
-To use the front-end test application for the cryptofiat contract, first create a private blockchain.
-
-```
-./create_geth_dev.sh
-```
 
 Start a node on the private blockchain
 
@@ -62,25 +65,6 @@ Occasionally you will need to unlock accounts
 
 ```
 unlockAccounts()
-```
-
-### Testing the CryptoDollar contracts
-
-After setting up your private chain correctly, instantiate the testnet oraclize service.
-From the ProofCryptoFiat folder:
-
-```
-cd ethereum-bridge
-npm install ethereum-bridge
-node bridge -H localhost:8545 -a 1 --dev --update-ds
-```
-
-Write down the Oraclize Address Resolver Address (OAR) and insert it in the CryptoFiatHub contract.
-Compile and migrate the CryptoFiat contracts on the development_geth network.
-
-```
-truffle compile --all
-truffle migrate --reset --network development_geth
 ```
 
 ### Contribution
