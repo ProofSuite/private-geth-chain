@@ -2,6 +2,8 @@
 # Geth Local Setup
 This repository provides a few utilities to setup a local private ethereum chain as well as a few javascript functions that can be used to interact with your local chain.
 
+You can find a version of this private ethereum chain with cryptofiat contracts already deployed on the [cryptofiat-a](https://github.com/ProofSuite/private-geth-chain/tree/cryptofiat-a) branch of this repository.
+
 ## Requirements :
 - OSX or Linux
 - Geth (1.8.2-stable)
