@@ -16,6 +16,44 @@ This local private chain comes with the following setup:
 - High Block gas limit to simulate current network condition (it seems as though the gas limit automatically comes down after after a while)
 - Websocket API
 
+## Contracts
+
+On the DEX (Decentralized Exchange Contract), the contracts are deployed at the following addresses:
+
+- Exchange.sol: 0x895d0a5e62479a9324252972a7b458d4a1e4d43d
+- Token1.sol (Mock Token): 0xdc759dd0c3ee162c8f57f6df4cde618c44b8deae
+- Token2.sol (Mock Token): 0x8208c9435fffcc3c514a7ba73101ea87f85ae0ee
+
+## Acounts
+
+The following accounts have been prefunded.
+
+    Accounts:
+
+    0: '0xe8e84ee367bc63ddb38d3d01bccef106c194dc47' (coinbase)
+    1: '0xcf7389dc6c63637598402907d5431160ec8972a5'
+    2: '0x7a9f3cd060ab180f36c17fe6bdf9974f577d77aa'
+    3: '0x14d281013d8ee8ccfa0eca87524e5b3cfa6152ba'
+    4: '0x6e9a406696617ec5105f9382d33ba3360fcfabcc'
+    5: '0x7e0f08462bf391ee4154a88994f8ce2aad7ab144'
+    6: '0x4dc5790733b997f3db7fc49118ab013182d6ba9b'
+    7: '0x545aeb22f378ef7a4f627c45efe8245152bed8a1'
+    8: '0x830212529506afd9c24adcfdde6fe825982d37ae'
+    9: '0x44809695706c252435531029b1e9d7d0355d475f'
+
+    Private Keys:
+
+    0: '7c78c6e2f65d0d84c44ac0f7b53d6e4dd7a82c35f51b251d387c2a69df712660'
+    1: '7c78c6e2f65d0d84c44ac0f7b53d6e4dd7a82c35f51b251d387c2a69df712661'
+    2: '7c78c6e2f65d0d84c44ac0f7b53d6e4dd7a82c35f51b251d387c2a69df712662'
+    3: '7c78c6e2f65d0d84c44ac0f7b53d6e4dd7a82c35f51b251d387c2a69df712663'
+    4: '7c78c6e2f65d0d84c44ac0f7b53d6e4dd7a82c35f51b251d387c2a69df712664'
+    5: '7c78c6e2f65d0d84c44ac0f7b53d6e4dd7a82c35f51b251d387c2a69df712665'
+    6: '7c78c6e2f65d0d84c44ac0f7b53d6e4dd7a82c35f51b251d387c2a69df712666'
+    7: '7c78c6e2f65d0d84c44ac0f7b53d6e4dd7a82c35f51b251d387c2a69df712667'
+    8: '7c78c6e2f65d0d84c44ac0f7b53d6e4dd7a82c35f51b251d387c2a69df712668'
+    9: '7c78c6e2f65d0d84c44ac0f7b53d6e4dd7a82c35f51b251d387c2a69df712669'
+
 ## Setup
 
 To use the front-end test application for the cryptofiat contract, first create a private blockchain.
