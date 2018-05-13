@@ -33,9 +33,9 @@ The Cryptofiat (develop-b) contracts are deployed at the following addresses:
 - **Store**: *0xebfded149b86d4088c40a8b61d0388c584a446c8*
 
 On the DEX (Decentralized Exchange Contract) branch, the contracts are deployed at the following addresses:
-- **Exchange.sol**: *0x88facf1096d13a05f30ffe34bedf8477a8582ffd*
-- **Token1.sol** (Mock Token): *0x0b446a9d7d5bbbb1c2b415a40065eb7de56fc4af*
-- **Token2.sol** (Mock Token): *0xf2c0deadbb80439c20a6ed374b2d644081bdb32f*
+- **Exchange.sol**: *0xae55690d4b079460e6ac28aaa58c9ec7b73a7485*
+- **Token1.sol** (Mock Token): *0x5ac05570112c0a95f2fd1d85292e0c08522a1bdb*
+- **Token2.sol** (Mock Token): *0x43925198636a2d43f1c887ed1d936c76f03f55de*
 
 ## Accounts
 
