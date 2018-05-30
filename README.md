@@ -33,6 +33,13 @@ On the DEX (Decentralized Exchange Contract) branch, the contracts are deployed 
 - **Token1.sol** (Mock Token): *0xdc759dd0c3ee162c8f57f6df4cde618c44b8deae*
 - **Token2.sol** (Mock Token): *0x8208c9435fffcc3c514a7ba73101ea87f85ae0ee*
 
+On te dex-with-tokens-deposit branch, the contracts are deployed at the following addresses:
+
+- **Exchange.sol**: *0x3b4a6d0bbed8270a015769c208015d842e7f89ca*
+- **Token1.sol**: (Mock Token) *0x880008ca32dabda4314ca6bae0f4b73b3a0b41a7*
+- **Token2.sol**: (Mock Token) *0x1d25866fe4d6fed65ff023589aa3e198f1fe0bfe*
+- **Token2.sol**: (Mock Token) *0x32c65046aaba7aa7ebb81bdab12af5e2d9b9c44c*
+
 ## Accounts
 
   Addresses:
