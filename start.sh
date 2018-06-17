@@ -2,7 +2,7 @@ geth \
 --port 3001 \
 --networkid 8888 \
 --nodiscover \
---datadir="privatechain" \
+--datadir="chain" \
 --maxpeers=0  \
 --rpc \
 --rpcport 8545 \
