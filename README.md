@@ -20,18 +20,24 @@ This local private chain comes with the following setup:
 
 ## Contracts
 
-On the Cryptofiat-a branch, the contracts are deployed at the following addresses:
+The Cryptofiat (develop-a) contracts are deployed at the following addresses:
+- **CryptoDollar**: *0x2bc811ef0dae8b1ecefe8e43664c4536e5c48bac*
+- **CryptoFiatHub**: *0xc89bba87b12f6ca19652d6de2fe0846a20f8b4e7*
+- **Rewards**: *0x8e68c083c6f7784bf35a12d5a31f7587274d407c*
+- **Store**: *0xb662559bcf3450d113819975e911de822fa6eccc*
 
-- **CryptoDollar**: *0x080ad9df9d0dc7e3d7335563e35c1ffd7b9cf8b4*
-- **CryptoFiatHub**: *0xe697df331dc3dec15cca00196d68094e5f1dfb3e*
-- **Rewards**: *0x132cd9073785489134b1bd1ff9d80d00c7795d3d*
-- **Store**: *0xbf3a2acc78b6c339e9d4afc3466ec4abfd5f4bca*
+The Cryptofiat (develop-b) contracts are deployed at the following addresses:
+- **CryptoDollar**: *0x6b97d162ec1b44c24bf63e39956ddfae85b08799*
+- **CryptoFiatHub**: *0x8d0a722b76c0dcb91bf62334afd11f925c0adb95*
+- **Rewards**: *0x9836f8141f96fca273a0c4bf70af99cb9da58796*
+- **Store**: *0xebfded149b86d4088c40a8b61d0388c584a446c8*
 
 On the DEX (Decentralized Exchange Contract) branch, the contracts are deployed at the following addresses:
-
-- **Exchange.sol**: *0x895d0a5e62479a9324252972a7b458d4a1e4d43d*
-- **Token1.sol** (Mock Token): *0xdc759dd0c3ee162c8f57f6df4cde618c44b8deae*
-- **Token2.sol** (Mock Token): *0x8208c9435fffcc3c514a7ba73101ea87f85ae0ee*
+- **Exchange**: *0x9836f8141f96fca273a0c4bf70af99cb9da58796*
+- **Migrations**: *0xebfded149b86d4088c40a8b61d0388c584a446c8*
+- **Token1**: *0x8d0a722b76c0dcb91bf62334afd11f925c0adb95*
+- **Token2**: *0x2eb24432177e82907de24b7c5a6e0a5c03226135*
+- **Token3**: *0xc73eec564e96e6653943d6d0e32121d455917653*
 
 ## Accounts
 
