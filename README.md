@@ -33,11 +33,12 @@ The Cryptofiat (develop-b) contracts are deployed at the following addresses:
 - **Store**: *0xebfded149b86d4088c40a8b61d0388c584a446c8*
 
 On the DEX (Decentralized Exchange Contract) branch, the contracts are deployed at the following addresses:
-- **Exchange**: *0x9836f8141f96fca273a0c4bf70af99cb9da58796*
-- **Migrations**: *0xebfded149b86d4088c40a8b61d0388c584a446c8*
-- **Token1**: *0x8d0a722b76c0dcb91bf62334afd11f925c0adb95*
-- **Token2**: *0x2eb24432177e82907de24b7c5a6e0a5c03226135*
-- **Token3**: *0xc73eec564e96e6653943d6d0e32121d455917653*
+- **Exchange**: *0x2b1657db52708f0cc3376b296eddc6c6007e2709*
+- **Migrations**: *0xcd987129db815c499e4253e3d4fc7c2a42111e8b*
+- **Token1**: *0x675e7f60d5110daf2f0d34a81640712deeea57ec*
+- **Token2**: *0xed62c319da6cf247de9c9ffcd2d943ff25e6e338*
+- **Token3**: *0xf31b5fd62ea7c5b5ab7467429c98be640cf6ab3a*
+- **WETH**: *0xbdd6df6c426d0aacf946ba8545f27442913b2b95*
 
 ## Accounts
 
@@ -72,13 +73,13 @@ On the DEX (Decentralized Exchange Contract) branch, the contracts are deployed 
 To use the front-end test application for the cryptofiat contract, first create a private blockchain.
 
 ```
-./create_geth_dev.sh
+./create.sh
 ```
 
 Start a node on the private blockchain
 
 ```
-./start_geth_dev.sh
+./start.sh
 ```
 
 On a different terminal instance attach a geth process to the current to your running node
@@ -135,6 +136,10 @@ Compile and migrate the CryptoFiat contracts on the development_geth network.
 truffle compile --all
 truffle migrate --reset --network development_geth
 ```
+
+## NetworkID
+
+The networkID of this private network is 8888
 
 ### Contribution
 
